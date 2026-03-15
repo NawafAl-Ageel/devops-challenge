@@ -1,0 +1,11 @@
+project_id               = "your-gcp-project-id"
+region                   = "us-central1"
+zone                     = "us-central1-a"
+environment              = "prod"
+reviewer_email           = "atef.mahmoud@devoteam.com"
+gke_num_nodes            = 2
+gke_machine_type         = "e2-medium"
+bastion_machine_type     = "e2-micro"
+redis_memory_size_gb     = 1
+notification_email       = "your-email@example.com"
+authorized_source_ranges = ["0.0.0.0/0"]

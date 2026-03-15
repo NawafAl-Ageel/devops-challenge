@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: demo-app-ingress
+  namespace: demo-app
+  annotations:
+    kubernetes.io/ingress.class: "gce"
+    kubernetes.io/ingress.global-static-ip-name: "demo-app-static-ip"
+spec:
+  defaultBackend:
+    service:
+      name: demo-app-service
+      port:
+        number: 80
